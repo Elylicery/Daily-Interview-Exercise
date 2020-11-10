@@ -180,6 +180,38 @@ console.log(res);
 
 ![image-20200831093128855](img/image-20200831093128855.png)
 
+利用map找到重复出现的元素，利用set的key唯一的特性
+
+```js
+function duplicates(arr) {
+  let map =  new Map();
+  let res = new Set();;
+  arr.forEach(item =>{
+      if(!map.has(item)){
+          map.set(item,0);
+      }else{
+        map[item] = 1;
+        res.add(item)
+      }
+  });
+  return [...res];
+}
+
+console.log(duplicates([1, 2, 4, 4, 3, 3, 1, 5, 3]));function duplicates(arr) {
+  let map =  new Map();
+  let res = new Set();;
+  arr.forEach(item =>{
+      if(!map.has(item)){
+          map.set(item,0);
+      }else{
+        map[item] = 1;
+        res.add(item)
+      }
+  });
+  return [...res];
+}
+```
+
 
 
 ## 求合数的个数
