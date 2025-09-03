@@ -10,9 +10,9 @@
 
 一共有*25*匹马，有一个赛场，赛场有*5*个赛道，就是说最多同时可以有*5*匹马一起比赛。假设每匹马都跑的很稳定，不用任何其他工具，只通过马与马之间的比赛，试问最少得比多少场才能知道跑得最快的*5*匹马？
 
-一个讲解：https://blog.csdn.net/goodfrar/article/details/51661610?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param
-
+7场
 ## h5新特性
+
 
 https://juejin.im/post/6844903680756416520
 
@@ -63,38 +63,6 @@ https://juejin.im/post/6844903680756416520
 
 ![image-20200831095125119](img/image-20200831095125119.png)
 
-## ===
-
-=== 表示有严格相等比较。全等操作符比较两个值是否相等，两个被比较的值在比较前都不进行隐式转换。如果两个被比较的值具有不同的类型，这两个值是不全等的。
-
-```js
-var num = 0;
-var obj = new String("0");
-var str = "0";
-var b = false;
-
-console.log(num === obj); // false
-console.log(num === str); // false
-console.log(obj === str); // false
-
-console.log(null === undefined); // false
-console.log(obj === null); // false
-console.log(obj === undefined); // false
-```
-
-## 选择器
-
-### jquery根据name属性的高级选择
-
-|                                  |                                                              |
-| :------------------------------- | ------------------------------------------------------------ |
-| `$("div[id]")`                   | 选择所有含有id属性的div元素                                  |
-| `$("input[name='keleyicom']")`   | 选择所有的name属性等于'keleyicom'的input元素                 |
-| `$("input[name!='keleyicom']")`  | 选择所有的name属性不等于'keleyicom'的input元素               |
-| `$("input[name^='keleyi']")`     | 选择所有的name属性以'keleyi'开头的input元素                  |
-| `$("input[name$='keleyi']")`     | 选择所有的name属性以'keleyi'结尾的input元素                  |
-| `$("input[name*='keleyi']")`     | 选择所有的name属性包含'keleyi'的input元素                    |
-| `$("input[id][name$='keleyi']")` | 可使用多个属性进行联合选择，得到所有的含有id属性并且那么属性以keleyi结尾的元素 |
 
 ### CSS3 nth 伪类选择器
 
@@ -160,23 +128,7 @@ https://juejin.im/post/6844903655473152008
 
 ##  找出数组中的重复元素
 
-思路：首先将数组排序，然后进行比较，找出重复元素。
-
-```js
-function duplicate(arr) {
-  var tmp = [];
-  arr.sort().sort(function (a, b) {
-    if (a === b && tmp.indexOf(a) === -1) {
-      tmp.push(a)
-    }
-  })
-  return tmp
-}
-
-var arr = [1, 2, 5, 6, 5, 6, 8, 8, 9, 0];
-var res = duplicate(arr);
-console.log(res);
-```
+set + filter
 
 ![image-20200831093128855](img/image-20200831093128855.png)
 
