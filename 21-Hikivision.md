@@ -57,20 +57,24 @@ https://juejin.im/post/6844903680756416520
 
       
 
-      
 
 ## 跨域
+下列哪些功能默认支持跨域? ()
 
-![image-20200831095125119](img/image-20200831095125119.png)
+A. LocalStorage
+
+B. Image
+
+C. canvas
+
+D. iframe
+
+正确答案：B D
 
 
 ### CSS3 nth 伪类选择器
 
 https://www.cnblogs.com/Wayou/p/css3-nth-selector.html
-
-## 顺序表
-
-<img src="img/image-20200831100011878.png" alt="image-20200831100011878" style="zoom:67%;" />
 
 ## JS中实现继承
 
